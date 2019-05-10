@@ -140,6 +140,8 @@
 
   $paganti = Pagante::getAllPaganti($conn);
 
+  echo"<br><b>ALL PAGANTI</b><br><br>";
+
   foreach ($paganti as $pagante) {
 
     print_r($pagante); echo "<br>";
@@ -149,6 +151,8 @@
   echo "<hr>";
 
   // Get paganti with  "E" ---------------------------
+
+  echo"<br><b>ALL PAGANTI STARTING WITH 'E'</b><br><br>";
 
   $pagantiE = Pagante::getEPaganti($conn);
 
